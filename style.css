@@ -1,0 +1,49 @@
+.carousel-indicators li
+{
+    border-radius: 50%;
+    width: 12px;
+    height:12px;
+}
+body
+{
+    background-color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link
+{
+    background-color: rgb(161, 161, 161);
+    color: white;
+    padding: 5px;    
+}
+.navbar-brand img
+{
+    height: 150px;
+}
+.container-fluid
+{
+    margin: 0 !important;
+}
+
+.carousel-caption
+{
+    top:75%;
+   
+}
+
+.carousel-caption h3
+{
+    font-size: 3em;
+}
+#about-me
+{
+    background-color: transparent;
+    color: white;
+    margin-right:15px;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.nopadding
+{
+    padding:0 !important;
+}

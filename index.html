@@ -54,8 +54,7 @@
                             <a class="nav-link" href="pets.html">Pet Photography</a>
                         <li class="nav-item">
                             <a class="nav-link" href="portraits.html">Portraits</a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                        
                         </li>
                     </ul>                    
                 </div>
@@ -65,7 +64,7 @@
         
     </header>
 
-
+<!--Carousel-->
 
 <div class="container-fluid">
     <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
@@ -84,13 +83,13 @@
             <div class="carousel-item">
                 <img src="images/Poppy2.jpg" class="d-block w-100" alt="Poppy">
                 <div class="carousel-caption">
-                    <h1 class="mb-4">pets</h1>
+                    <h1 class="mb-4">Pet Photography</h1>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="images\portraits\portrait2.jpg" class="d-block w-100" alt="portrait2">
                 <div class="carousel-caption">
-                    <h1 class="mb-4">portraits</h1>
+                    <h1 class="mb-4">Portraits</h1>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
@@ -111,12 +110,54 @@
         <div class="row justify-content-center">
             <div id="about-me" id="about">
                 <h3>About Me!</h3>
-                <p>I am a hobby photographer based in wakefield. I take photos of a number of different genres</p>
+                <img src="images\me.jpg" alt="Me!">
+                <p>I am a hobby photographer based in wakefield. I take photos of a number of different genres. Please take a look at the examples of my work and get in touch if you want to see more!</p>
 
             </div>
         </div>
     </div>
     <!--End about me-->
+
+    <!--Contact me start-->
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center pb-2">
+                           
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-modal">
+                Subscribe
+            </button>
+            
+           
+        </div>
+        
+    </div>
+
+    <!--contact me modal-->
+
+    <div id="contact-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3 id="myModalLabel">Join my mailing list!</h3>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal col-sm-12">
+                <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+                <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+                <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+                <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="Phone Number" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number" type="text"></div>
+                <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--contact me modal end-->
 
     <!--Footer start-->
     <footer class="site-footer">
